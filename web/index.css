@@ -2,11 +2,17 @@
     margin: 0;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Helvetica", sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
 .body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Helvetica", sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -29,18 +35,31 @@
     }
 }
 
+/* Glassmorphism Card Style */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 2px;
 }
 
 .caption {
-    color: #bbb;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 16px;
 }
 
 .header {
     margin-top: 40px;
     margin-bottom: 25px;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
 }
 
 .scroll_view {
@@ -52,28 +71,47 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .scroll_view > .card {
-    background-color: #ccc;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     font-weight: bold;
     height: 125px;
     width: 275px;
     position: relative;
     display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll_view > .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
 }
 
 .scroll_view > .img_card {
-    background-color: #ccc;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     width: 250px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     font-weight: bold;
     position: relative;
     display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.scroll_view > .img_card:hover {
+    transform: scale(1.05);
 }
 
 .card > p {
@@ -82,7 +120,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 15px;
     font-size: 25px;
     position: absolute;
-    text-shadow: 0 0 10px rgba(0,0,0,0.8); 
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .center {
@@ -93,7 +131,7 @@ h1, h2, h3, h4, h5, h6, p {
     float: left;
 }
 
-.right_float { 
+.right_float {
     float: right;
 }
 
@@ -101,15 +139,39 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 2em;
     cursor: pointer;
     text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
 }
 
-.add_sileo:hover, a:hover {
-    opacity: 0.8;
-    cursor: pointer;
+.add_sileo:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
 }
 
 .package {
     margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
 }
 
 .package > img {
@@ -117,6 +179,8 @@ h1, h2, h3, h4, h5, h6, p {
     width: 75px;
     height: 75px;
     float: left;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .package_info {
@@ -126,34 +190,44 @@ h1, h2, h3, h4, h5, h6, p {
 .package_name {
     font-weight: bold;
     font-size: 21px;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .package_caption {
     margin-top: 7px;
-    color: #999;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .cell > .title {
     float: left;
-    color: #999;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .cell > .text {
     float: right;
+    color: white;
 }
 
 h3 {
     margin-top: 15px;
     margin-bottom: 15px;
+    color: white;
 }
 
 .footer {
     margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .subtle_link, .subtle_link > div > div, .subtle_link > div > div > p {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .subtle_link:hover, .subtle_link > *:hover {
@@ -173,34 +247,64 @@ h3 {
     background-position: center;
     height: 150px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 20px;
     z-index: -2;
     margin-bottom: 25px;
     top: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .changelog {
     display: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav {
     display: flex;
     margin: 20px;
     float: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav_btn {
     width: 50%;
-    display:inline;
+    display: inline;
     text-align: center;
-    color: #999;
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     padding-bottom: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.nav_btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav_btn.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid #00a3ff;
 }
 
 .changelog_entry {
     margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 a {
@@ -210,21 +314,76 @@ a {
 .table-btn, .table-btn > div {
     padding-top: 10px;
     padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.table-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .table-btn:after {
     content: "›";
-    font-size:30px;
+    font-size: 30px;
     transform: translateY(-40px);
     float: right;
+    color: white;
 }
 
+.table {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.md_view {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.md_view h1, .md_view h2, .md_view h3, .md_view h4 {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.md_view p, .md_view li {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.md_view ul, .md_view ol {
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.compatibility {
+    background: rgba(0, 163, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 163, 255, 0.3);
+    color: white;
+    margin: 15px 0;
+}
+
+/* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #161616;
-        color: white;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     }
-
+    
     .subtle_link, .subtle_link > div > div, .subtle_link > div > div > p {
         color: white;
     }
