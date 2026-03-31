@@ -1,0 +1,72 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.nahtedetihw.gesturesxv/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{207,400}",
+          "screenshots": [
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.nahtedetihw.gesturesxv/screenshot/sc1.png",
+              "accessibilityText": "Screenshot 1"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.nahtedetihw.gesturesxv/screenshot/sc2.png",
+              "accessibilityText": "Screenshot 2"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.nahtedetihw.gesturesxv/screenshot/sc3.png",
+              "accessibilityText": "Screenshot 3"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.nahtedetihw.gesturesxv/screenshot/sc4.png",
+              "accessibilityText": "Screenshot 4"
+            }
+          ]
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# GesturesXV\n\n## iPhone X gestures brought to older iPhones\n\nGesturesXV brings the modern gesture navigation from iPhone X to older iPhone models compatible with iOS 15.\n\n## Features\n\n- iPhone X-style gesture navigation\n- Swipe up to go home\n- Swipe up and hold for App Switcher\n- Swipe from bottom corners for Back\n- Smooth animations\n- Highly customizable\n- Low battery impact\n\n## Compatibility\n\n- iOS 15.0 and later\n- Older iPhone models (non-X devices)\n\n## Note\n\nThis tweak requires a respring after installation. Some gestures may need time to get used to if you're coming from Android or newer iOS devices.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "nahtedetihW"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.6"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 15.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
