@@ -1,0 +1,68 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.alimaulana.aimpro/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{207,400}",
+          "screenshots": [
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.alimaulana.aimpro/screenshot/sc1.png",
+              "accessibilityText": "Screenshot 1"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.alimaulana.aimpro/screenshot/sc2.png",
+              "accessibilityText": "Screenshot 2"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.alimaulana.aimpro/screenshot/sc3.png",
+              "accessibilityText": "Screenshot 3"
+            }
+          ]
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# AIM Pro\n\n## iOS 16 Style Lockscreen\n\nAIM Pro is the perfect version of AIM, now it can be customized on Lockscreen or Notifications Center.\n\n**Important:** AIM Pro only adds customization on the lockscreen. So I only sell the lockscreen customization feature, I don't sell AIM and as you can see it's free as of now.\n\n## Features\n\n### Time\n- Custom font\n- Custom font size\n- Custom color\n- Position offset\n- Alignment\n\n### Date\n- Custom font\n- Custom font size\n- Custom color\n- Position offset\n- Alignment\n- Date option (Style: uppercase, lowercase, capitalized, none)\n\n### Widget\n- Widget option\n- Custom color\n- Position offset\n\n**Note:** Custom font put in `/Library/Application Support/AIMFont` (format .ttf/.otf/.woff)\n\n**Tip:** To change a custom rainbow color on the lockscreen with the color picker, hold on the rainbow color section to display a list of colors.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Ali Maulana"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.1.3k"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 15.0 - 16.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
