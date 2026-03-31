@@ -112,8 +112,9 @@ body {
 }
 
 .add_sileo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 14px 28px;
     background: rgba(0, 163, 255, 0.15);
@@ -127,6 +128,9 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .add_sileo:hover {
@@ -136,10 +140,15 @@ body {
     box-shadow: 0 12px 40px rgba(0, 163, 255, 0.3);
 }
 
+.add_sileo:active {
+    transform: scale(0.95);
+}
+
 .add_sileo svg {
     width: 24px;
     height: 24px;
     fill: currentColor;
+    flex-shrink: 0;
 }
 
 /* Section titles */
@@ -772,61 +781,126 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .body {
+        padding: 20px 16px;
+    }
+
     .header-container {
-        flex-direction: column;
-        gap: 20px;
-        padding: 24px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 20px;
     }
 
     .header {
-        font-size: 36px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .add_sileo {
+        padding: 12px 20px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .add_sileo svg {
+        width: 20px;
+        height: 20px;
     }
 
     .section-header {
         padding: 16px 20px;
+        margin: 30px 0 20px 0;
+    }
+
+    .section-header svg {
+        width: 26px;
+        height: 26px;
     }
 
     .section-title {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .package-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .package-card {
-        padding: 18px;
+        padding: 16px;
+        gap: 16px;
     }
 
     .package-icon {
         width: 56px;
         height: 56px;
+        flex-shrink: 0;
     }
 
     .package-name {
         font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    .package-caption {
+        font-size: 14px;
+    }
+
+    /* Modal mobile styles */
     .modal-content {
-        width: 95%;
-        margin: 20px;
+        width: calc(100% - 32px);
+        max-width: none;
+        margin: 16px;
+        border-radius: 24px;
     }
 
     .modal-header {
         padding: 24px 20px 16px 20px;
     }
 
-    .modal-body {
-        padding: 16px 20px;
+    .modal-header h2 {
+        font-size: 24px;
     }
 
-    .modal-footer {
-        padding: 20px 20px 26px 20px;
+    .modal-header p {
+        font-size: 14px;
+    }
+
+    .modal-close {
+        top: 20px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .modal-close svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .modal-body {
+        padding: 16px 20px;
+        gap: 10px;
     }
 
     .package-manager-btn {
         padding: 16px;
+        gap: 14px;
     }
 
     .pm-icon {
         width: 44px;
         height: 44px;
+        flex-shrink: 0;
+    }
+
+    .pm-icon svg {
+        width: 24px;
+        height: 24px;
     }
 
     .pm-name {
@@ -835,5 +909,50 @@ body {
 
     .pm-desc {
         font-size: 13px;
+    }
+
+    .pm-arrow {
+        width: 22px;
+        height: 22px;
+    }
+
+    .modal-footer {
+        padding: 20px 20px 26px 20px;
+    }
+
+    .modal-footer p {
+        font-size: 12px;
+    }
+
+    .modal-footer code {
+        font-size: 13px;
+        padding: 14px 16px;
+    }
+
+    .footer {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .footer-caption {
+        font-size: 13px;
+    }
+}
+
+/* iPhone specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .add_sileo {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .package-card {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .modal-content {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 }
