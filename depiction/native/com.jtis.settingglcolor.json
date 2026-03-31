@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.jtis.settingglcolor/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Settings GL Color\n\n## Snowboard Theme\n\nColorful settings icon theme for Snowboard.\n\n## Requirements\n\n- Snowboard by Mirco (https://miro92.com/repo/)\n- iOS 14.0 or later\n\n## Installation\n\n1. Install Snowboard from https://miro92.com/repo/\n2. Install this theme\n3. Respring your device\n4. Open Snowboard and select Settings GL Color theme\n5. Apply and respring",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "JTis"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Snowboard Themes"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}

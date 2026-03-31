@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.jtis.liquidglass/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Liquid Glass\n\n## Snowboard Theme\n\nA beautiful liquid glass themed icons for your device.\n\n## Requirements\n\n- Snowboard by Mirco (https://miro92.com/repo/)\n- iOS 14.0 or later\n\n## Installation\n\n1. Install Snowboard from https://miro92.com/repo/\n2. Install this theme\n3. Respring your device\n4. Open Snowboard and select Liquid Glass theme\n5. Apply and respring",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "JTis"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "2.0k"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Snowboard Themes"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
