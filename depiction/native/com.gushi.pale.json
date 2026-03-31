@@ -1,10 +1,12 @@
 {
-  "minVersion": "0.1",
-  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/icon.png",
+  "class": "DepictionTabView",
   "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/icon.png",
+  "itemCornerRadius": 8,
   "tabs": [
     {
       "tabname": "Details",
+      "class": "DepictionStackView",
       "views": [
         {
           "class": "DepictionScreenshotsView",
@@ -13,11 +15,11 @@
           "screenshots": [
             {
               "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/screenshot/sc1.jpg",
-              "accessibilityText": "Screenshot"
+              "accessibilityText": "Screenshot 1"
             },
             {
               "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/screenshot/sc2.jpg",
-              "accessibilityText": "Screenshot"
+              "accessibilityText": "Screenshot 2"
             }
           ]
         },
@@ -55,13 +57,6 @@
         },
         {
           "class": "DepictionSpacerView"
-        },
-        {
-          "class": "DepictionLabelView",
-          "text": "Silica 1.2.2 – Updated 2024-02-24",
-          "textColor": "#999999",
-          "fontSize": "10.0",
-          "alignment": 1
         }
       ]
     }
