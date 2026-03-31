@@ -33,7 +33,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "# Siliqua Pro\n\n## Advanced AirPod Controls\n\nSiliqua Pro gives you complete control over your AirPods with customizable gestures and features.\n\n## Features\n\n- Custom gesture controls for AirPods\n- Double tap, triple tap, and hold gestures\n- Customize each gesture action\n- Control music playback\n- Answer/end calls\n- Activate Siri\n- Noise control toggles\n- Battery status indicators\n- Per-AirPod customization\n\n## Requirements\n\n- AirPods or Beats headphones\n- iOS 14.0 or later\n\n## Note\n\nThis is the Pro version with additional features and customization options.",
+          "markdown": "# Siliqua Pro\n\n## All-in-One AirPods Pro Customization\n\nSiliqua Pro is an all-in-one customization tweak for your AirPods Pro.\n\n## Features\n\n### Customisable Actions\n\nCustomize actions for single, double, triple, or quadruple presses:\n\n- Play / Pause\n- Skip\n- Rewind\n- Skip 15s\n- Rewind 15s\n- Toggle Repeat\n- Toggle Shuffle\n- Increase Volume\n- Decrease Volume\n- Toggle Siri\n- Cycle listening modes\n\n### Listening Mode Control\n\nControl listening modes in the audio module with two layout modes:\n\n- **Trio-mode:** One button for each - Off, Noise Cancellation, and Transparency mode\n- **Single-mode:** Cycle through listening modes with a single button\n\n### Additional Features\n\n- Route name in audio module\n- AirPods icon in volume slider when AirPods Pro are playing media\n- CC Module to cycle through AirPods listening modes (Off, Noise Cancellation, Transparency)\n\n## Compatibility\n\n- iOS 12 and iOS 11\n- AirPods Pro required for full functionality",
           "useSpacing": true
         },
         {
@@ -56,7 +56,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Compatibility",
-          "text": "iOS 14.0+"
+          "text": "iOS 11.0+"
         },
         {
           "class": "DepictionTableTextView",
