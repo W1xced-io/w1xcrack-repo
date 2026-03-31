@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
     <title>W1xced</title>
     <link rel="stylesheet" type="text/css" href="web/index.css">
-    <style>a, .tint {color: #00a3ff} .active {color: #00a3ff}</style>
     <meta name="description" content="W1xced's personal repository">
     <meta property="og:title" content="W1xced">
     <meta property="og:description" content="W1xced's personal repository">
@@ -17,223 +16,267 @@
     <meta name="theme-color" content="#00a3ff">
 </head>
 <body>
+    <!-- Animated background -->
+    <div class="animated-bg"></div>
+    <div class="liquid-orb orb-1"></div>
+    <div class="liquid-orb orb-2"></div>
+    <div class="liquid-orb orb-3"></div>
+
     <div class="body">
-        <h1 class="header left_float">W1xced</h1>
-        <a class="header right_float add_sileo tint" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://w1xced-io.github.io/w1xcrack-repo/">+</a>
-        <div class="scroll_view">
+        <!-- Header -->
+        <div class="header-container">
+            <h1 class="header">W1xced</h1>
+            <a class="add_sileo" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://w1xced-io.github.io/w1xcrack-repo/">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                </svg>
+                Add Source
+            </a>
         </div>
-        <h2 class="header">Tweak</h2>
-        <div class="packageList">
-                <a class="subtle_link" href="depiction/web/com.gushi.pale.html">
-                    <div class="package">
-                        <img src="assets/com.gushi.pale/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Pale</p>
-                            <p class="package_caption">gushi</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.noisyflake.betteralarm.html">
-                    <div class="package">
-                        <img src="assets/com.noisyflake.betteralarm/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">BetterAlarm</p>
-                            <p class="package_caption">NoisyFlake</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/xyz.alimaulana.aimpro.html">
-                    <div class="package">
-                        <img src="assets/xyz.alimaulana.aimpro/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">AIM Pro</p>
-                            <p class="package_caption">Ali Maulana</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/lynx2.html">
-                    <div class="package">
-                        <img src="assets/lynx2/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Lynx 2</p>
-                            <p class="package_caption">iOS Creator</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.mtac.lynxtwo.localizations.html">
-                    <div class="package">
-                        <img src="assets/com.mtac.lynxtwo.localizations/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Lynx 2 Localizations</p>
-                            <p class="package_caption">MTAC</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.nahtedetihw.gesturesxv.html">
-                    <div class="package">
-                        <img src="assets/com.nahtedetihw.gesturesxv/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">GesturesXV</p>
-                            <p class="package_caption">nahtedetihW</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/xyz.cypwn.siliquapro.html">
-                    <div class="package">
-                        <img src="assets/xyz.cypwn.siliquapro/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Siliqua Pro</p>
-                            <p class="package_caption">Cypwn</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.mtac.vitreux.html">
-                    <div class="package">
-                        <img src="assets/com.mtac.vitreux/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Vitreux</p>
-                            <p class="package_caption">MTAC</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.cydiageek.hidesearchbutton.html">
-                    <div class="package">
-                        <img src="assets/com.cydiageek.hidesearchbutton/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Hide Search Button</p>
-                            <p class="package_caption">CydiaGeek</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.icraze.keepmyjb.html">
-                    <div class="package">
-                        <img src="assets/com.icraze.keepmyjb/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">KeepMyJb</p>
-                            <p class="package_caption">iCraze</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.ethxnn88.visibleisland.html">
-                    <div class="package">
-                        <img src="assets/com.ethxnn88.visibleisland/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">VisibleIsland</p>
-                            <p class="package_caption">ethxnn88</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/codes.aurora.kayokos.html">
-                    <div class="package">
-                        <img src="assets/codes.aurora.kayokos/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Kayokos</p>
-                            <p class="package_caption">Aurora</p>
-                        </div>
-                    </div>
-                </a>
+
+        <!-- Tweak Section -->
+        <div class="section-header">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/>
+            </svg>
+            <span class="section-title">Tweak</span>
         </div>
-        <h2 class="header">Snowboard Theme</h2>
-        <div class="packageList">
-                <a class="subtle_link" href="depiction/web/com.jtis.ios26.html">
-                    <div class="package">
-                        <img src="assets/com.jtis.ios26/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">iOS 26</p>
-                            <p class="package_caption">JTis</p>
-                        </div>
+        <div class="package-grid">
+            <a class="subtle_link" href="depiction/web/com.gushi.pale.html">
+                <div class="package-card">
+                    <img src="assets/com.gushi.pale/icon.png" alt="Pale" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Pale</div>
+                        <div class="package-caption">gushi</div>
                     </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.jtis.liquidglass.html">
-                    <div class="package">
-                        <img src="assets/com.jtis.liquidglass/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Liquid Glass</p>
-                            <p class="package_caption">JTis</p>
-                        </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.noisyflake.betteralarm.html">
+                <div class="package-card">
+                    <img src="assets/com.noisyflake.betteralarm/icon.png" alt="BetterAlarm" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">BetterAlarm</div>
+                        <div class="package-caption">NoisyFlake</div>
                     </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.jtis.settingglcolor.html">
-                    <div class="package">
-                        <img src="assets/com.jtis.settingglcolor/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Settings GL Color</p>
-                            <p class="package_caption">JTis</p>
-                        </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/xyz.alimaulana.aimpro.html">
+                <div class="package-card">
+                    <img src="assets/xyz.alimaulana.aimpro/icon.png" alt="AIM Pro" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">AIM Pro</div>
+                        <div class="package-caption">Ali Maulana</div>
                     </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.ivintagelover.solidglassrl.html">
-                    <div class="package">
-                        <img src="assets/com.ivintagelover.solidglassrl/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Solid Glass RL</p>
-                            <p class="package_caption">IvinTagelover</p>
-                        </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/lynx2.html">
+                <div class="package-card">
+                    <img src="assets/lynx2/icon.png" alt="Lynx 2" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Lynx 2</div>
+                        <div class="package-caption">iOS Creator</div>
                     </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.spark.snowboard.html">
-                    <div class="package">
-                        <img src="assets/com.spark.snowboard/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Snowboard</p>
-                            <p class="package_caption">Spark</p>
-                        </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.mtac.lynxtwo.localizations.html">
+                <div class="package-card">
+                    <img src="assets/com.mtac.lynxtwo.localizations/icon.png" alt="Lynx 2 Localizations" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Lynx 2 Localizations</div>
+                        <div class="package-caption">MTAC</div>
                     </div>
-                </a>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.nahtedetihw.gesturesxv.html">
+                <div class="package-card">
+                    <img src="assets/com.nahtedetihw.gesturesxv/icon.png" alt="GesturesXV" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">GesturesXV</div>
+                        <div class="package-caption">nahtedetihW</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/xyz.cypwn.siliquapro.html">
+                <div class="package-card">
+                    <img src="assets/xyz.cypwn.siliquapro/icon.png" alt="Siliqua Pro" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Siliqua Pro</div>
+                        <div class="package-caption">Cypwn</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.mtac.vitreux.html">
+                <div class="package-card">
+                    <img src="assets/com.mtac.vitreux/icon.png" alt="Vitreux" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Vitreux</div>
+                        <div class="package-caption">MTAC</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.cydiageek.hidesearchbutton.html">
+                <div class="package-card">
+                    <img src="assets/com.cydiageek.hidesearchbutton/icon.png" alt="Hide Search Button" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Hide Search Button</div>
+                        <div class="package-caption">CydiaGeek</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.icraze.keepmyjb.html">
+                <div class="package-card">
+                    <img src="assets/com.icraze.keepmyjb/icon.png" alt="KeepMyJb" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">KeepMyJb</div>
+                        <div class="package-caption">iCraze</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.ethxnn88.visibleisland.html">
+                <div class="package-card">
+                    <img src="assets/com.ethxnn88.visibleisland/icon.png" alt="VisibleIsland" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">VisibleIsland</div>
+                        <div class="package-caption">ethxnn88</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/codes.aurora.kayokos.html">
+                <div class="package-card">
+                    <img src="assets/codes.aurora.kayokos/icon.png" alt="Kayokos" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Kayokos</div>
+                        <div class="package-caption">Aurora</div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <h2 class="header">Library</h2>
-        <div class="packageList">
-                <a class="subtle_link" href="depiction/web/org.thebigboss.libcolorpicker.html">
-                    <div class="package">
-                        <img src="assets/org.thebigboss.libcolorpicker/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">libColorPicker</p>
-                            <p class="package_caption">TheBigBoss</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/ws.hbang.alderis.html">
-                    <div class="package">
-                        <img src="assets/ws.hbang.alderis/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">Alderis</p>
-                            <p class="package_caption">HASHBANG Productions</p>
-                        </div>
-                    </div>
-                </a>
+
+        <!-- Snowboard Theme Section -->
+        <div class="section-header">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+            </svg>
+            <span class="section-title">Snowboard Theme</span>
         </div>
-        <h2 class="header">YouTube Tweak</h2>
-        <div class="packageList">
-                <a class="subtle_link" href="depiction/web/com.ps.youpip.html">
-                    <div class="package">
-                        <img src="assets/com.ps.youpip/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">YouPiP</p>
-                            <p class="package_caption">PoomSmart</p>
-                        </div>
+        <div class="package-grid">
+            <a class="subtle_link" href="depiction/web/com.jtis.ios26.html">
+                <div class="package-card">
+                    <img src="assets/com.jtis.ios26/icon.png" alt="iOS 26" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">iOS 26</div>
+                        <div class="package-caption">JTis</div>
                     </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/com.ps.ytvideooverlay.html">
-                    <div class="package">
-                        <img src="assets/com.ps.ytvideooverlay/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">YTVideoOverlay</p>
-                            <p class="package_caption">PoomSmart</p>
-                        </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.jtis.liquidglass.html">
+                <div class="package-card">
+                    <img src="assets/com.jtis.liquidglass/icon.png" alt="Liquid Glass" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Liquid Glass</div>
+                        <div class="package-caption">JTis</div>
                     </div>
-                </a>
-                <a class="subtle_link" href="depiction/web/xyz.ytplus.html">
-                    <div class="package">
-                        <img src="assets/xyz.ytplus/icon.png">
-                        <div class="package_info">
-                            <p class="package_name">YTPlus</p>
-                            <p class="package_caption">Aurora</p>
-                        </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.jtis.settingglcolor.html">
+                <div class="package-card">
+                    <img src="assets/com.jtis.settingglcolor/icon.png" alt="Settings GL Color" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Settings GL Color</div>
+                        <div class="package-caption">JTis</div>
                     </div>
-                </a>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.ivintagelover.solidglassrl.html">
+                <div class="package-card">
+                    <img src="assets/com.ivintagelover.solidglassrl/icon.png" alt="Solid Glass RL" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Solid Glass RL</div>
+                        <div class="package-caption">IvinTagelover</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.spark.snowboard.html">
+                <div class="package-card">
+                    <img src="assets/com.spark.snowboard/icon.png" alt="Snowboard" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Snowboard</div>
+                        <div class="package-caption">Spark</div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="caption center footer">Silica 1.2.2 – Updated 2024-02-24</div>
+
+        <!-- Library Section -->
+        <div class="section-header">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/>
+            </svg>
+            <span class="section-title">Library</span>
+        </div>
+        <div class="package-grid">
+            <a class="subtle_link" href="depiction/web/org.thebigboss.libcolorpicker.html">
+                <div class="package-card">
+                    <img src="assets/org.thebigboss.libcolorpicker/icon.png" alt="libColorPicker" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">libColorPicker</div>
+                        <div class="package-caption">TheBigBoss</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/ws.hbang.alderis.html">
+                <div class="package-card">
+                    <img src="assets/ws.hbang.alderis/icon.png" alt="Alderis" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">Alderis</div>
+                        <div class="package-caption">HASHBANG Productions</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- YouTube Tweak Section -->
+        <div class="section-header">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+            </svg>
+            <span class="section-title">YouTube Tweak</span>
+        </div>
+        <div class="package-grid">
+            <a class="subtle_link" href="depiction/web/com.ps.youpip.html">
+                <div class="package-card">
+                    <img src="assets/com.ps.youpip/icon.png" alt="YouPiP" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">YouPiP</div>
+                        <div class="package-caption">PoomSmart</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/com.ps.ytvideooverlay.html">
+                <div class="package-card">
+                    <img src="assets/com.ps.ytvideooverlay/icon.png" alt="YTVideoOverlay" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">YTVideoOverlay</div>
+                        <div class="package-caption">PoomSmart</div>
+                    </div>
+                </div>
+            </a>
+            <a class="subtle_link" href="depiction/web/xyz.ytplus.html">
+                <div class="package-card">
+                    <img src="assets/xyz.ytplus/icon.png" alt="YTPlus" class="package-icon">
+                    <div class="package-info">
+                        <div class="package-name">YTPlus</div>
+                        <div class="package-caption">Aurora</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-caption">Silica 1.2.2 – Updated 2024-02-24</div>
+        </div>
     </div>
-</body>
     <script src="web/index.js"></script>
+</body>
 </html>
