@@ -666,90 +666,116 @@ body {
 }
 
 .modal-body {
-    padding: 20px 30px;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: center;
 }
 
-.package-manager-btn {
-    display: flex;
-    align-items: center;
+.pm-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
 }
 
-.package-manager-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.15);
-    transform: translateX(8px);
-}
-
-.pm-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
+.pm-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    position: relative;
 }
 
-.pm-icon svg {
-    width: 28px;
-    height: 28px;
+.pm-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.pm-btn:active {
+    transform: scale(0.95);
+}
+
+.pm-btn svg {
+    width: 32px;
+    height: 32px;
     fill: white;
 }
 
-.cydia-icon {
+/* Package manager colors */
+.pm-btn.cydia {
     background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    border-color: rgba(0, 122, 255, 0.3);
 }
 
-.zebra-icon {
+.pm-btn.cydia:hover {
+    border-color: rgba(0, 122, 255, 0.5);
+}
+
+.pm-btn.zebra {
     background: linear-gradient(135deg, #FF9500 0%, #FF3B30 100%);
+    border-color: rgba(255, 149, 0, 0.3);
 }
 
-.sileo-icon {
+.pm-btn.zebra:hover {
+    border-color: rgba(255, 149, 0, 0.5);
+}
+
+.pm-btn.sileo {
     background: linear-gradient(135deg, #00a3ff 0%, #007AFF 100%);
+    border-color: rgba(0, 163, 255, 0.3);
 }
 
-.installer-icon {
+.pm-btn.sileo:hover {
+    border-color: rgba(0, 163, 255, 0.5);
+}
+
+.pm-btn.installer {
     background: linear-gradient(135deg, #34C759 0%, #30D158 100%);
+    border-color: rgba(52, 199, 89, 0.3);
 }
 
-.pm-info {
-    flex: 1;
-    min-width: 0;
+.pm-btn.installer:hover {
+    border-color: rgba(52, 199, 89, 0.5);
 }
 
-.pm-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 4px;
+/* Tooltip */
+.pm-btn[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    background: rgba(30, 30, 40, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    animation: tooltipFade 0.2s ease forwards;
 }
 
-.pm-desc {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.pm-arrow {
-    width: 24px;
-    height: 24px;
-    fill: rgba(255, 255, 255, 0.4);
-    transition: all 0.3s ease;
-}
-
-.package-manager-btn:hover .pm-arrow {
-    fill: #00a3ff;
-    transform: translateX(4px);
+@keyframes tooltipFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 .modal-footer {
@@ -889,37 +915,26 @@ body {
     }
 
     .modal-body {
-        padding: 16px 20px;
-        gap: 10px;
+        padding: 20px;
     }
 
-    .package-manager-btn {
-        padding: 16px;
-        gap: 14px;
+    .pm-grid {
+        gap: 12px;
+        max-width: 280px;
     }
 
-    .pm-icon {
-        width: 44px;
-        height: 44px;
-        flex-shrink: 0;
+    .pm-btn {
+        width: 56px;
+        height: 56px;
     }
 
-    .pm-icon svg {
-        width: 24px;
-        height: 24px;
+    .pm-btn svg {
+        width: 28px;
+        height: 28px;
     }
 
-    .pm-name {
-        font-size: 17px;
-    }
-
-    .pm-desc {
-        font-size: 13px;
-    }
-
-    .pm-arrow {
-        width: 22px;
-        height: 22px;
+    .pm-btn[title]:hover::after {
+        display: none;
     }
 
     .modal-footer {
