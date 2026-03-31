@@ -1,6 +1,6 @@
 {
   "minVersion": "0.1",
-  "headerImage": "assets/com.gushi.pale/icon.png",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/icon.png",
   "tintColor": "#00a3ff",
   "tabs": [
     {
@@ -12,11 +12,11 @@
           "itemSize": "{207,400}",
           "screenshots": [
             {
-              "url": "assets/com.gushi.pale/screenshot/sc1.jpg",
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/screenshot/sc1.jpg",
               "accessibilityText": "Screenshot"
             },
             {
-              "url": "assets/com.gushi.pale/screenshot/sc2.jpg",
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/screenshot/sc2.jpg",
               "accessibilityText": "Screenshot"
             }
           ]
