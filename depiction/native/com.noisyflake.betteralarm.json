@@ -29,7 +29,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "# BetterAlarm\n\nA beautiful and customizable alarm clock replacement for iOS.\n\n## Features\n\n- Customizable alarm sounds\n- Beautiful UI design\n- Multiple alarm support\n- Snooze functionality\n- Volume control\n\n## Compatibility\n\nSupports iPhone, iPad, and iPod touch running iOS 12.0 and later.",
+          "markdown": "# BetterAlarm\n\nOrganize and protect your photos\n\nThe iOS Photos app has always been lacking features in regards to organization and privacy. This tweak aims to fix that.\n\n## Move photos instead of just copying\n\nWhen adding photos to an album, you'll now get asked if you want to copy the photos (default behavior) or move them instead. When moving, the photos will be removed from the album they're currently in and will then be added to the selected album. This allows you to e.g. clean up the camera roll (also known as the Recents album) and create true albums with all your memories.\n\n**Note:** This feature internally makes use of the \"Hide photo\" feature of the photos app, so all moved photos will also appear in the \"Hidden photos\" album.\n\n## Lock every photo album\n\nDon't want people snooping around your private photos? Lock your private albums with either FaceID, TouchID or a password. Every album can be locked with a different authentication method for extra security.\n\nThis works in both the Photos app, as well as apps that make use of the stock iOS photos picker.\n\n## Hide locked albums\n\nWant to take your privacy a step further? With a simple toggle in the tweak settings, you can hide all locked albums from both the Photos app as well as all other apps.\n\n## Choose your own privacy settings\n\n### Remember unlocks\nThis feature keeps your unlocked albums unlocked while you are in the Photos app.\n\n### Unlock all albums\nThis feature unlocks all albums with the same authentication method.\n\n## Compatibility\n\nCompatible with all iOS 15 & 16 jailbreaks:\n- Dopamine\n- palera1n\n- Xina (FaceID won't work)\n\n**Note:** On Xina, FaceID protection won't work due to issues with the Xina jailbreak itself. Upgrading to Dopamine is strongly recommended!",
           "useSpacing": true
         },
         {
@@ -52,7 +52,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Compatibility",
-          "text": "iOS 12.0+"
+          "text": "iOS 15.0 - 16.5"
         },
         {
           "class": "DepictionTableTextView",
