@@ -1,0 +1,72 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.cypwn.siliquapro/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{207,400}",
+          "screenshots": [
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.cypwn.siliquapro/screenshot/sc1.jpg",
+              "accessibilityText": "Screenshot 1"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.cypwn.siliquapro/screenshot/sc2.jpg",
+              "accessibilityText": "Screenshot 2"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.cypwn.siliquapro/screenshot/sc3.png",
+              "accessibilityText": "Screenshot 3"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.cypwn.siliquapro/screenshot/sc4.png",
+              "accessibilityText": "Screenshot 4"
+            }
+          ]
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Siliqua Pro\n\n## Advanced AirPod Controls\n\nSiliqua Pro gives you complete control over your AirPods with customizable gestures and features.\n\n## Features\n\n- Custom gesture controls for AirPods\n- Double tap, triple tap, and hold gestures\n- Customize each gesture action\n- Control music playback\n- Answer/end calls\n- Activate Siri\n- Noise control toggles\n- Battery status indicators\n- Per-AirPod customization\n\n## Requirements\n\n- AirPods or Beats headphones\n- iOS 14.0 or later\n\n## Note\n\nThis is the Pro version with additional features and customization options.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Cypwn"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.2.4"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweak"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
