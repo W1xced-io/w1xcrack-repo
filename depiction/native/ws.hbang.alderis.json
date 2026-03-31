@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/ws.hbang.alderis/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Alderis\n\n## Modern Color Picker for iOS\n\nAlderis is a modern color picker library for iOS tweaks. It provides a beautiful and intuitive interface for selecting colors.\n\n## Features\n\n- Modern, clean UI design\n- HSB and RGB color models\n- Color history\n- Preset colors\n- Smooth animations\n- Used by many popular tweaks\n\n## For Developers\n\nThis is a library package. Other tweaks can depend on this package to provide color picking functionality.\n\n## Compatibility\n\n- iOS 12.0 and later\n- Required by many customization tweaks\n- Successor to libColorPicker",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "HASHBANG Productions"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.2.3"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 12.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Library"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}

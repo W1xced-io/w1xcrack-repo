@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/org.thebigboss.libcolorpicker/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# libColorPicker\n\n## Color Picker Library for iOS\n\nA color picker library for iOS tweaks and applications. Used by many tweaks to allow users to customize colors.\n\n## Features\n\n- Multiple color picker modes\n- HSB and RGB color models\n- Preset colors\n- Custom color input\n- Used by many popular tweaks\n\n## For Developers\n\nThis is a library package. Other tweaks can depend on this package to provide color picking functionality to users.\n\n## Compatibility\n\n- iOS 10.0 and later\n- Required by many customization tweaks",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "TheBigBoss"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.6.9-2"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 10.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Library"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
