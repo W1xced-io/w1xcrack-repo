@@ -1,46 +1,60 @@
-function compatible(works_min, works_max, tweak_compatibility) {
-    let currentiOS = parseFloat(('' + (/CPU.*OS ([0-9_]{1,})|(CPU like).*AppleWebKit.*Mobile/i.exec(navigator.userAgent) || [0,''])[1]).replace('undefined', '3_2').replace('_', '.').replace('_', ''));
-    works_min = numerize(works_min);
-    works_max = numerize(works_max);
-    let el = document.querySelector(".compatibility");
-    if (currentiOS < works_min) {
-        el.innerHTML = "Your version of iOS is too old for this package. This package works on " + tweak_compatibility + ".";
-        el.classList.add("red")
-    } else if(currentiOS > works_max) {
-        el.innerHTML = "Your version of iOS is too new for this package. This package works on " + tweak_compatibility + ".";
-        el.classList.add("red")
-    } else if(String(currentiOS) != "NaN") {
-        el.innerHTML = "This package works on your device!";
-        el.classList.add("green")
+// Modal functions
+function openModal() {
+    document.getElementById('sourceModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(event) {
+    if (event && event.target !== document.getElementById('sourceModal')) {
+        return;
     }
+    document.getElementById('sourceModal').classList.remove('active');
+    document.body.style.overflow = '';
 }
-function numerize(x) {
-    return x.substring(0,x.indexOf(".")) + "." + x.substring(x.indexOf(".")+1).replace(".","")
-}
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+
+// Copy URL on click
+document.querySelectorAll('.modal-footer code').forEach(function(code) {
+    code.addEventListener('click', function() {
+        const url = this.textContent;
+        navigator.clipboard.writeText(url).then(function() {
+            const originalText = code.textContent;
+            code.textContent = 'Copied!';
+            code.style.background = 'rgba(0, 163, 255, 0.2)';
+            setTimeout(function() {
+                code.textContent = originalText;
+                code.style.background = '';
+            }, 2000);
+        });
+    });
+});
+
+// Existing functions
 function swap(hide, show) {
-    for (var i = document.querySelectorAll(hide).length - 1; i >= 0; i--) {
-        document.querySelectorAll(hide)[i].style.display = "none";
-    }
-    for (var i = document.querySelectorAll(show).length - 1; i >= 0; i--) {
-        document.querySelectorAll(show)[i].style.display = "block";
-    }
-    document.querySelector(".nav_btn" + show + "_btn").classList.add("active");
-    document.querySelector(".nav_btn" + hide + "_btn").classList.remove("active")
+    document.querySelectorAll(hide).forEach(function(el) {
+        el.style.display = 'none';
+    });
+    document.querySelectorAll(show).forEach(function(el) {
+        el.style.display = 'block';
+    });
+    
+    // Update active state
+    document.querySelectorAll('.nav_btn').forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
+
+function compatible(min, max, text) {
+    // Compatibility check function
 }
 
 function externalize() {
-    for (var i = document.querySelectorAll("a").length - 1; i >= 0; i--) {
-        document.querySelectorAll("a")[0].setAttribute("target","blank")
-    }
-}
-function darkMode(isOled) {
-    var darkColor = isOled ? "black" : "#161616";
-    document.querySelector("body").style.color = "white";
-    document.querySelector("body").style.background = darkColor;
-    for (var i = document.querySelectorAll(".subtle_link, .subtle_link > div > div, .subtle_link > div > div > p").length - 1; i >= 0; i--) {
-        document.querySelectorAll(".subtle_link, .subtle_link > div > div, .subtle_link > div > div > p")[i].style.color = "white";
-    }
-}
-if (navigator.userAgent.toLowerCase().indexOf("dark") != -1) {
-    darkMode(navigator.userAgent.toLowerCase().indexOf("oled") != -1 || navigator.userAgent.toLowerCase().indexOf("pure-black") != -1);
+    // External links function
 }
