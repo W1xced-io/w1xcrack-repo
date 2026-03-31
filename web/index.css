@@ -6,13 +6,13 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
-    background: #000000;
+    background: #0a0a0a;
     min-height: 100vh;
     color: #ffffff;
     overflow-x: hidden;
 }
 
-/* Animated gradient background */
+/* Animated gradient background - Lime Green */
 .animated-bg {
     position: fixed;
     top: 0;
@@ -21,11 +21,11 @@ body {
     height: 100%;
     z-index: -1;
     background: linear-gradient(125deg, 
-        #1a1a2e 0%, 
-        #16213e 25%, 
-        #0f3460 50%, 
-        #533483 75%, 
-        #1a1a2e 100%);
+        #0a0a0a 0%, 
+        #1a2f1a 25%, 
+        #2d5016 50%, 
+        #3d6b1e 75%, 
+        #0a0a0a 100%);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
 }
@@ -36,12 +36,12 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Liquid glass orbs */
+/* Liquid glass orbs - Lime Green */
 .liquid-orb {
     position: fixed;
     border-radius: 50%;
     filter: blur(80px);
-    opacity: 0.5;
+    opacity: 0.4;
     animation: float 20s ease-in-out infinite;
     z-index: -1;
 }
@@ -49,7 +49,7 @@ body {
 .orb-1 {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(77, 166, 30, 0.4) 0%, transparent 70%);
     top: -100px;
     left: -100px;
     animation-delay: 0s;
@@ -58,7 +58,7 @@ body {
 .orb-2 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(118, 75, 162, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(102, 204, 51, 0.3) 0%, transparent 70%);
     bottom: -150px;
     right: -150px;
     animation-delay: -5s;
@@ -67,7 +67,7 @@ body {
 .orb-3 {
     width: 350px;
     height: 350px;
-    background: radial-gradient(circle, rgba(240, 147, 251, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(153, 230, 102, 0.25) 0%, transparent 70%);
     top: 50%;
     left: 50%;
     animation-delay: -10s;
@@ -104,7 +104,7 @@ body {
 .header {
     font-size: 48px;
     font-weight: 700;
-    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    background: linear-gradient(135deg, #ccff00 0%, #99e600 50%, #66cc00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -117,12 +117,12 @@ body {
     justify-content: center !important;
     gap: 10px !important;
     padding: 14px 28px !important;
-    background: rgba(0, 163, 255, 0.15) !important;
+    background: rgba(102, 204, 51, 0.15) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
     border-radius: 16px !important;
-    border: 1px solid rgba(0, 163, 255, 0.3) !important;
-    color: #00a3ff !important;
+    border: 1px solid rgba(102, 204, 51, 0.3) !important;
+    color: #99e600 !important;
     font-size: 17px !important;
     font-weight: 600 !important;
     cursor: pointer !important;
@@ -136,10 +136,10 @@ body {
 }
 
 .add_sileo:hover {
-    background: rgba(0, 163, 255, 0.25) !important;
-    border-color: rgba(0, 163, 255, 0.5) !important;
+    background: rgba(102, 204, 51, 0.25) !important;
+    border-color: rgba(102, 204, 51, 0.5) !important;
     transform: translateY(-2px) !important;
-    box-shadow: 0 12px 40px rgba(0, 163, 255, 0.3) !important;
+    box-shadow: 0 12px 40px rgba(102, 204, 51, 0.3) !important;
 }
 
 .add_sileo:active {
@@ -164,17 +164,17 @@ body {
     gap: 16px;
     margin: 50px 0 30px 0;
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(102, 204, 51, 0.05);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(102, 204, 51, 0.1);
 }
 
 .section-header svg {
     width: 32px;
     height: 32px;
-    fill: #00a3ff;
+    fill: #99e600;
 }
 
 .section-title {
@@ -711,37 +711,37 @@ body {
     flex-shrink: 0;
 }
 
-/* Package manager border colors */
+/* Package manager border colors - Lime */
 .pm-btn.cydia {
-    border-color: rgba(0, 122, 255, 0.3);
+    border-color: rgba(102, 204, 51, 0.4);
 }
 
 .pm-btn.cydia:hover {
-    border-color: rgba(0, 122, 255, 0.5);
+    border-color: rgba(102, 204, 51, 0.6);
 }
 
 .pm-btn.zebra {
-    border-color: rgba(255, 149, 0, 0.3);
+    border-color: rgba(102, 204, 51, 0.4);
 }
 
 .pm-btn.zebra:hover {
-    border-color: rgba(255, 149, 0, 0.5);
+    border-color: rgba(102, 204, 51, 0.6);
 }
 
 .pm-btn.sileo {
-    border-color: rgba(0, 163, 255, 0.3);
+    border-color: rgba(102, 204, 51, 0.4);
 }
 
 .pm-btn.sileo:hover {
-    border-color: rgba(0, 163, 255, 0.5);
+    border-color: rgba(102, 204, 51, 0.6);
 }
 
 .pm-btn.installer {
-    border-color: rgba(52, 199, 89, 0.3);
+    border-color: rgba(102, 204, 51, 0.4);
 }
 
 .pm-btn.installer:hover {
-    border-color: rgba(52, 199, 89, 0.5);
+    border-color: rgba(102, 204, 51, 0.6);
 }
 
 /* Tooltip */

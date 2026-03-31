@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0, maximum-scale=1">
     <title>W1xced</title>
-    <link rel="stylesheet" type="text/css" href="web/index.css?v=3">
+    <link rel="stylesheet" type="text/css" href="web/index.css?v=4">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -16,7 +16,7 @@
     <meta name="twitter:title" content="W1xced">
     <meta name="twitter:description" content="W1xced's personal repository">
     <meta name="twitter:image" content="https://w1xced-io.github.io/w1xcrack-repo/CydiaIcon.png">
-    <meta name="theme-color" content="#00a3ff">
+    <meta name="theme-color" content="#66cc00">
 </head>
 <body>
     <!-- Animated background -->
@@ -29,47 +29,28 @@
         <!-- Header -->
         <div class="header-container">
             <h1 class="header">W1xced</h1>
-            <button class="add_sileo" onclick="openModal()" type="button">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                </svg>
-                <span>Add Source</span>
-            </button>
         </div>
 
-        <!-- Modal -->
-        <div id="sourceModal" class="modal" onclick="closeModal(event)">
-            <div class="modal-content" onclick="event.stopPropagation()">
-                <div class="modal-header">
-                    <h2>Add Repository</h2>
-                    <p>Choose your package manager</p>
-                    <button class="modal-close" onclick="closeModal(event)">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="pm-grid">
-                        <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn cydia" title="Cydia">
-                            <img src="cydia.png" alt="Cydia">
-                        </a>
-                        <a href="zbra://sources/add/https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn zebra" title="Zebra">
-                            <img src="Zebra.png" alt="Zebra">
-                        </a>
-                        <a href="sileo://source/https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn sileo" title="Sileo">
-                            <img src="sileo.png" alt="Sileo">
-                        </a>
-                        <a href="installer://add/repo?url=https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn installer" title="Installer">
-                            <img src="installer.png" alt="Installer">
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <p>Repository URL:</p>
-                    <code>https://w1xced-io.github.io/w1xcrack-repo/</code>
-                </div>
-            </div>
+        <!-- Package Managers -->
+        <div class="section-header" style="margin-top: 30px;">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/>
+            </svg>
+            <span class="section-title">Add Repository</span>
+        </div>
+        <div class="pm-grid" style="max-width: 280px; margin: 0 auto 40px auto;">
+            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn cydia" title="Cydia">
+                <img src="cydia.png" alt="Cydia">
+            </a>
+            <a href="zbra://sources/add/https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn zebra" title="Zebra">
+                <img src="Zebra.png" alt="Zebra">
+            </a>
+            <a href="sileo://source/https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn sileo" title="Sileo">
+                <img src="sileo.png" alt="Sileo">
+            </a>
+            <a href="installer://add/repo?url=https://w1xced-io.github.io/w1xcrack-repo/" class="pm-btn installer" title="Installer">
+                <img src="installer.png" alt="Installer">
+            </a>
         </div>
 
         <!-- Tweak Section -->
