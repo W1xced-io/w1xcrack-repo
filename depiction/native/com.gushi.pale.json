@@ -1,6 +1,6 @@
 {
   "minVersion": "0.1",
-  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/icon.png",
+  "headerImage": "https://raw.githubusercontent.com/W1xced-io/w1xcrack-repo/main/assets/com.gushi.pale/icon.png",
   "tintColor": "#00a3ff",
   "tabs": [
     {
@@ -12,19 +12,18 @@
           "itemSize": "{207,400}",
           "screenshots": [
             {
-              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/screenshot/sc1.jpg",
+              "url": "https://raw.githubusercontent.com/W1xced-io/w1xcrack-repo/main/assets/com.gushi.pale/screenshot/sc1.jpg",
               "accessibilityText": "Screenshot"
             },
             {
-              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.gushi.pale/screenshot/sc2.jpg",
+              "url": "https://raw.githubusercontent.com/W1xced-io/w1xcrack-repo/main/assets/com.gushi.pale/screenshot/sc2.jpg",
               "accessibilityText": "Screenshot"
             }
           ]
         },
         {
           "class": "DepictionMarkdownView",
-          "title": "Pale",
-          "text": "A beautiful and minimalistic UI tweak for iOS.\n\n**Features:**\n\n• Pale status bar loading support\n\n**Requirements:**\n\n• Snowboard Status Bar Extension + Juice Status Bar support is required for the LTE icon to work\n• Get Snowboard from https://miro92.com/repo/\n• Does not currently support iOS 15/16\n• Dual SIM users: Need to disable secondary cards\n\n**CallAssist:**\n\n• 100px perfect support (requires fine-tuning of icon position and size)\n\n**Contains:**\n\n• Signal\n• Wi-Fi\n• Network Type (3G, 4G, 5G, LTEx2)\n• Battery (Juice)\n\n**Compatibility:**\n\nSupports iPhone, iPad, and iPod touch running iOS 12.0 to 16.5. Jailbreak required.",
+          "text": "# Pale\n\nA beautiful and minimalistic UI tweak for iOS.\n\n## Features\n\n- Pale status bar loading support\n\n## Requirements\n\n- Snowboard Status Bar Extension + Juice Status Bar support is required for the LTE icon to work\n- Get Snowboard from https://miro92.com/repo/\n- Does not currently support iOS 15/16\n- Dual SIM users: Need to disable secondary cards\n\n## CallAssist\n\n- 100px perfect support (requires fine-tuning of icon position and size)\n\n## Contains\n\n- Signal\n- Wi-Fi\n- Network Type (3G, 4G, 5G, LTEx2)\n- Battery (Juice)\n\n## Compatibility\n\nSupports iPhone, iPad, and iPod touch running iOS 12.0 to 16.5. Jailbreak required.",
           "useSpacing": true
         },
         {
