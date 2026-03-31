@@ -691,26 +691,28 @@ body {
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     text-decoration: none;
     position: relative;
+    background: rgba(255, 255, 255, 0.05) !important;
 }
 
 .pm-btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.08) !important;
 }
 
 .pm-btn:active {
     transform: scale(0.95);
 }
 
-.pm-btn svg {
-    width: 32px;
-    height: 32px;
-    fill: white;
+.pm-btn img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-/* Package manager colors */
+/* Package manager border colors */
 .pm-btn.cydia {
-    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
     border-color: rgba(0, 122, 255, 0.3);
 }
 
@@ -719,7 +721,6 @@ body {
 }
 
 .pm-btn.zebra {
-    background: linear-gradient(135deg, #FF9500 0%, #FF3B30 100%);
     border-color: rgba(255, 149, 0, 0.3);
 }
 
@@ -728,7 +729,6 @@ body {
 }
 
 .pm-btn.sileo {
-    background: linear-gradient(135deg, #00a3ff 0%, #007AFF 100%);
     border-color: rgba(0, 163, 255, 0.3);
 }
 
@@ -737,7 +737,6 @@ body {
 }
 
 .pm-btn.installer {
-    background: linear-gradient(135deg, #34C759 0%, #30D158 100%);
     border-color: rgba(52, 199, 89, 0.3);
 }
 
@@ -928,9 +927,9 @@ body {
         height: 56px;
     }
 
-    .pm-btn svg {
-        width: 28px;
-        height: 28px;
+    .pm-btn img {
+        width: 36px;
+        height: 36px;
     }
 
     .pm-btn[title]:hover::after {
