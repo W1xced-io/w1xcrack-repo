@@ -1,0 +1,68 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.noisyflake.betteralarm/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{207,400}",
+          "screenshots": [
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.noisyflake.betteralarm/screenshot/sc1.jpg",
+              "accessibilityText": "Screenshot 1"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.noisyflake.betteralarm/screenshot/sc2.jpg",
+              "accessibilityText": "Screenshot 2"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.noisyflake.betteralarm/screenshot/sc3.jpg",
+              "accessibilityText": "Screenshot 3"
+            }
+          ]
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# BetterAlarm\n\nA beautiful and customizable alarm clock replacement for iOS.\n\n## Features\n\n- Customizable alarm sounds\n- Beautiful UI design\n- Multiple alarm support\n- Snooze functionality\n- Volume control\n\n## Compatibility\n\nSupports iPhone, iPad, and iPod touch running iOS 12.0 and later.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "NoisyFlake"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.4.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 12.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
