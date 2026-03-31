@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.lynxtwo.localizations/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Lynx 2 Localizations\n\n## Language support for Lynx 2 tweak\n\nThis package provides additional language localizations for Lynx 2 - the ultimate device customization tweak for iOS 14, 15 & 16.\n\n## Features\n\n- Multiple language support\n- Community translations\n- Regular updates\n- Easy installation\n\n## Requirements\n\n- Lynx 2 must be installed\n- Cephei (Aeolia) required\n\n## Supported Languages\n\nThis package includes translations for multiple languages to make Lynx 2 accessible worldwide.\n\n**Note:** This is a companion package for Lynx 2. Main tweak must be purchased separately.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "MTAC"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "2.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 14.0 - 16.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Localizations"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
