@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#ff0000",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/xyz.ytplus/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# YTPlus\n\n## YouTube Enhancement Tweak\n\nA comprehensive YouTube enhancement tweak with multiple features.\n\n## Features\n\n- Copy video URL\n- Download videos\n- Background playback\n- Disable ads\n- Skip sponsors\n- Custom themes\n- And much more!\n\n## Compatibility\n\n- iOS 13.0 and later\n- Requires YouTube app",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Aurora"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "5.2b4"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 13.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "YouTube Tweak"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}

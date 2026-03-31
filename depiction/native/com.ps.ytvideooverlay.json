@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#ff0000",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.ps.ytvideooverlay/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# YTVideoOverlay\n\n## YouTube Video Overlay Controls\n\nAdds overlay controls to YouTube videos for better playback control.\n\n## Features\n\n- Double tap to seek\n- Volume and brightness controls\n- Playback speed control\n- Custom gestures\n\n## Compatibility\n\n- iOS 13.0 and later\n- Requires YouTube app",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "PoomSmart"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "2.3.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 13.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "YouTube Tweak"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}

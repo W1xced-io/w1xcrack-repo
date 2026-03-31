@@ -1,0 +1,68 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.spark.snowboard/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{207,400}",
+          "screenshots": [
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.spark.snowboard/screenshot/sc1.png",
+              "accessibilityText": "Screenshot 1"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.spark.snowboard/screenshot/sc2.png",
+              "accessibilityText": "Screenshot 2"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.spark.snowboard/screenshot/sc3.png",
+              "accessibilityText": "Screenshot 3"
+            }
+          ]
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Snowboard\n\n## Icon Theming Engine\n\nThe most popular icon theming engine for iOS. Apply custom icon themes to your device.\n\n## Features\n\n- Apply custom icon themes\n- Multiple theme support\n- Easy theme switching\n- Large theme library\n- Rootless support\n- Regular updates\n\n## How to Use\n\n1. Install Snowboard\n2. Install icon themes\n3. Respring your device\n4. Open Snowboard app\n5. Select and apply themes\n6. Respring to apply changes\n\n## Compatibility\n\n- iOS 11.0 and later\n- Rootless jailbreak support",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Spark"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.5.37-Beta4"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 11.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Snowboard Theme"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}

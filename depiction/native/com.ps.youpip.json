@@ -1,0 +1,49 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#ff0000",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.ps.youpip/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# YouPiP\n\n## YouTube Picture-in-Picture\n\nEnables native Picture-in-Picture support for YouTube videos. Watch videos in a floating window while using other apps.\n\n## Features\n\n- Native PiP support for YouTube\n- Floating video window\n- Multitasking support\n- Works with YouTube Premium content\n\n## Compatibility\n\n- iOS 13.0 and later\n- Requires YouTube app",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "PoomSmart"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.12.10"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 13.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "YouTube Tweak"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
