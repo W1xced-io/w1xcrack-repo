@@ -1,0 +1,80 @@
+{
+  "class": "DepictionTabView",
+  "tintColor": "#00a3ff",
+  "headerImage": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/icon.png",
+  "itemCornerRadius": 8,
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{207,400}",
+          "screenshots": [
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/screenshot/sc1.png",
+              "accessibilityText": "Screenshot 1"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/screenshot/sc2.png",
+              "accessibilityText": "Screenshot 2"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/screenshot/sc3.png",
+              "accessibilityText": "Screenshot 3"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/screenshot/sc4.png",
+              "accessibilityText": "Screenshot 4"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/screenshot/sc5.png",
+              "accessibilityText": "Screenshot 5"
+            },
+            {
+              "url": "https://w1xced-io.github.io/w1xcrack-repo/assets/com.mtac.vitreux/screenshot/sc6.png",
+              "accessibilityText": "Screenshot 6"
+            }
+          ]
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Vitreux\n\n## A Recreation of Liquid Glass\n\nVitreux is a beautiful glassmorphism-themed customization tweak that brings a modern liquid glass aesthetic to your device.\n\n## Features\n\n- Liquid glass effect design\n- Modern glassmorphism UI\n- Smooth animations\n- Customizable elements\n- Beautiful visual effects\n\n## Compatibility\n\n- iOS 14.0 and later\n- Requires Cephei (Aeolia) for settings\n\n## Note\n\nThis is a recreation of the popular Liquid Glass design concept, reimagined for iOS devices.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "MTAC"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.4"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 14.0+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweak"
+        },
+        {
+          "class": "DepictionSpacerView"
+        }
+      ]
+    }
+  ]
+}
